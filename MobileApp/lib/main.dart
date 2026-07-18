@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'features/splash/splash_screen.dart';
+import 'core/theme/app_themes.dart';
+import 'features/language/language_screen.dart';
 
 void main() {
   runApp(const DigitalVillageApp());
@@ -11,9 +12,15 @@ class DigitalVillageApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: "Digital Village",
-      home: const SplashScreen(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.background,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.primary,
+        ),
+      ),
+      home: const LanguageScreen(),
     );
   }
 }
