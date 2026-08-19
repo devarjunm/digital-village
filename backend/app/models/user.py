@@ -1,9 +1,9 @@
-from datetime import datetime
+from datetime import datetime, timezone
 
 from sqlalchemy import Boolean, DateTime, String
 from sqlalchemy.orm import Mapped, mapped_column
 
-from app.core.database import Base
+from app.core.database import Base  
 
 
 class User(Base):
@@ -13,6 +13,10 @@ class User(Base):
 
     mobile_number: Mapped[str] = mapped_column(
         String(15), unique=True, nullable=False
+    )
+
+    language: Mapped[str] = mapped_column(
+    String(2), default="en", nullable=False
     )
 
     email: Mapped[str | None] = mapped_column(
@@ -32,11 +36,16 @@ class User(Base):
     )
 
     created_at: Mapped[datetime] = mapped_column(
-        DateTime, default=datetime.utcnow
+    DateTime,
+    default=lambda: datetime.now(timezone.utc),
+    nullable=False,
     )
 
     updated_at: Mapped[datetime] = mapped_column(
-        DateTime, default=datetime.utcnow
+    DateTime,
+    default=lambda: datetime.now(timezone.utc),
+    onupdate=lambda: datetime.now(timezone.utc),
+    nullable=False,
     )
 
     is_active: Mapped[bool] = mapped_column(
