@@ -45,7 +45,7 @@ Allow verified farmers to:
 •	Discuss crop issues 
 •	Learn from agricultural experts 
 ________________________________________
-4. Problem Background
+Problem Background
 Currently, farmers interact with multiple digital systems.
 Examples include:
 •	MahaDBT 
@@ -64,7 +64,7 @@ As a result:
 •	User experience is inconsistent. 
 Digital Village aims to simplify the experience by serving as a unified platform. Where direct integration with official government systems is not available, the application can provide guidance, links, or complementary services rather than duplicating official records.
 ________________________________________
-5. Core Values
+Core Values
 Farmer First
 Every design decision should benefit farmers.
 ________________________________________
@@ -83,7 +83,7 @@ ________________________________________
 Innovation
 Use Artificial Intelligence to assist farmers while keeping humans in control of important decisions.
 ________________________________________
-6. Target Users
+Target Users
 Primary Users
 •	Small farmers 
 •	Medium farmers 
@@ -103,7 +103,7 @@ Future Users
 •	NGOs 
 •	Agri-tech companies 
 ________________________________________
-7. Long-Term Vision (5–10 Years)
+Long-Term Vision (5–10 Years)
 Digital Village aims to evolve into a broader rural digital platform with capabilities such as:
 •	AI-based crop advisory 
 •	Village digital marketplace 
@@ -122,7 +122,7 @@ Digital Village aims to evolve into a broader rural digital platform with capabi
 These represent future possibilities and would require additional partnerships, technical work, and regulatory considerations.
 ________________________________________
 
-8. Success Indicators
+Success Indicators
 The project's impact can be evaluated using measurable indicators such as:
 Farmer Adoption
 •	Registered users 
@@ -141,7 +141,7 @@ Technical Performance
 •	API response time 
 •	Crash rate 
 ________________________________________
-9. Expected Impact
+Expected Impact
 For Farmers
 •	Easier access to information 
 •	Better awareness of schemes 
