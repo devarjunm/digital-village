@@ -1,7 +1,10 @@
 import 'dart:convert';
 
+import 'package:dvapp/features/language/language_screen.dart';
+import 'package:dvapp/features/weather/weather_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+
 
 import 'otp_screen.dart';
 
@@ -170,7 +173,16 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(
               height: 55,
               child: ElevatedButton(
-                onPressed: isLoading ? null : registerUser,
+                onPressed: isLoading
+                    ? null
+                    : () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const WeatherScreen(),
+                          ),
+                          );
+                          },
                 child: isLoading
                     ? const CircularProgressIndicator()
                     : const Text("Continue"),
